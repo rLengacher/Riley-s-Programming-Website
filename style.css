@@ -1,0 +1,63 @@
+/* 
+Riley Lenagcher 
+C# 2
+1/18/2025
+Comp 1 - HTML/CSS
+sSharp.html 
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    font-family: Arial;
+    font-size:10px;
+}
+header{
+	
+	block-size: 80px;
+    font-family: Courier;
+    font-size: 20px;
+    text-align:center;
+	vertical-align: bottom;
+    background-color: #6A5ACD
+}
+#maincontent
+{
+	font-size: 20px;
+    background-color: #A9A9A9;
+    height: 2000px;
+}
+nav{
+    float: left;
+    height: 2000px;
+    width: 200px;
+	font-size: 15px;
+    vertical-align: top;
+    background-color: #4B0082;
+}
+aside{
+    float:right;
+    height: 280px;
+    width: 200px;
+    background-color: #4B0082;
+}
+footer
+{
+    color: white;
+    background-color: #4B0082;
+}
+header, #maincontent, nav, aside, footer
+{
+    padding: 5px;
+}
+a{
+	color: yellow;
+}
+h3 {
+	text-align: center;
+}
+p {
+	text-indent: 20px;
+}

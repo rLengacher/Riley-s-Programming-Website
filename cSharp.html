@@ -1,0 +1,108 @@
+<!-- Riley Lenagcher -->
+<!-- C# 2 -->
+<!-- 1/18/2025 -->
+<!-- Comp 1 - HTML/CSS -->
+<!-- sSharp.html -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Riley's Programming website - C#/MAUI</title>
+		
+		<!--  link to external CSS  -->
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+		<!-- Internal CSS -->
+		<style>
+			section{
+				font-family: 'Bodoni MT';
+				border-bottom: 2px;
+				border-bottom-style:solid;
+				border-bottom-color: #4B0082;
+			}
+			ul {
+				text-indent: 5px;
+				list-style-position: inside;
+			}
+			img {
+			  display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!-- Header -->
+		<header>
+			<h1>Riley's Programming website</h1>
+			<h3>C#/MAUI</h3>
+		</header>
+		
+		<!-- Navagation element-->
+		<nav>
+			<ul>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="cSharp.html">C#/MAUI</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact me</a></li>
+			</ul>
+		</nav>
+		<!-- Main page -->
+		<!-- Page is desined as a portfolio page describing the program -->
+		<div id="maincontent">
+			<section>
+				<h3>
+					Text based adventuer game
+				<h3>
+			</section>
+			<p>
+				This program is a simple Text based adventure game made in C# and MAUI.
+				This was an assignment that we were provided a base template to work off.
+				This template was there to give us an idea as to how some of the basic functionality works but otherwise, we were expected to expand the functionality and game world.
+				The objective of the game was nothing more than to explore the environment and interact with objects. 
+			<p/>
+			<br/>
+			<!--  Displays picture of the program if picture is not available the alt is showed instead -->
+			<img alt="Picture of the program" src="images/TextGame.PNG" height="550" width="800"/>
+			<br/>
+				<list>
+				The main goals for the program where:
+					<ul>
+						<li>Creating the game world</li>
+						<li>Move around the game world</li>
+						<li>Interacting with objects</li>
+						<li>Retaining where items were in the world</li>
+						<li>Picking up items and adding them to an inventory</li>
+						<li>Insuering that the inventory had a limit to the amount that it could hold</li>
+						<li>Dropping items from inventory back into the game world</li>
+					</ul>
+				</list>
+			<br/>
+			<p>
+				There was an issue with the search button. 
+				The intended idea of the search button was to search an object for a hidden item. 
+				In most cases the functionality was fine, but issues were raised when it involved a portable object like a small box. 
+				The bug came down to the fact that the item was not being removed cause the user to obtain duplicates of the hidden item. 
+				The core issue seemed to be that the hidden item was not being removed from portable objects.
+				With that in mind I changed how the search button to account for the fact that not only objects had items but also portable as well resolving the issue. 
+			</p>
+			<br/>
+			<p>
+				Another issue that cropped up in debugging was the inventory allowing for more items than it should have. 
+				In this game the inventory should allow only 5 or so items. 
+				Yet under certain circumstances the inventory allows certain items to bypass the limit. 
+				The fix was that the system in place to increase or decrease the current inventory size was not checking the size of the inventory with some items. 
+				I mealy changed the code to account for all items and the bug was resolved. 
+			</p>
+		</div>
+		
+		<!-- Same links as the navagation element but in the footer -->
+		<footer>
+			    <a href="Index.html">Home</a>
+				<a href="cSharp.html">C#/MAUI</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact me</a>
+		</footer>
+	</body>
+</html>
