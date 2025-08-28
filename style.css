@@ -48,7 +48,7 @@ footer
     color: white;
     background-color: #4B0082;
 }
-header, #maincontent, nav, aside, footer
+header, #maincontent, aside, footer
 {
     padding: 5px;
 }
@@ -60,4 +60,8 @@ h3 {
 }
 p {
 	text-indent: 20px;
+}
+nav
+{
+	margin-right: 5px;
 }
